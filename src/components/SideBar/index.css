@@ -1,0 +1,132 @@
+.nav-bar{
+    background-color: #fff;
+    width: 120px;
+    height: 100%;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+    position: fixed;
+    transition: left 0.3s ease-in-out;
+    
+
+    .logo{
+        display: block;
+        padding: 8px 0;
+
+        img{
+            display: block;
+            margin: 8px auto;
+            width: 120px;
+            height: auto;
+        }
+    }
+    nav{
+        display: block;
+        position: absolute;
+        text-align: center;
+        height: 210px;
+        top: 50%;
+        max-width: 120px;
+        width: 100%;
+
+        a{
+            font-size: 22px;
+            height: 51px;
+            display: block;
+            line-height: 51px;
+            position: relative;
+            text-decoration: none;
+            
+            i{
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover{
+                color: purple;
+
+                svg{
+                    opacity: 0;
+
+                }
+                &:after{
+                    opacity: 1;
+                }
+            }
+
+            &:after{
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: block;
+                text-align: center;
+
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child{
+                &::after{
+                    content: 'HOME';
+
+                }
+            }
+
+            
+        }
+        a.about-link{
+            &::after{
+                content: 'ABOUT';
+            }
+        }
+
+        a.contact-link{
+            &::after{
+                content: 'CONTACT';
+            }
+        }
+        a.active{
+            svg{
+                color: #FFF600;
+            }
+        }
+
+
+    }
+
+    ul{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: none;
+        list-style: 0;
+        text-align: center;
+        margin: 0;
+
+        li{
+            a{
+                padding: 7px 0;
+                display: block;
+                font-size: 16px;
+                line-height: 17px;
+
+                &:hover svg{
+                    color: #ff6700;
+                }
+            }
+        }
+    }
+
+}
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .nav-bar{
+        display: none;
+    }
+}

@@ -1,0 +1,146 @@
+.navBar{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    background: transparent;
+    
+    
+}
+
+.navBar-bg{
+    background-color: #f5f5f5;
+    width: 120px;
+}
+.nav-menu{
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    
+
+}
+.mobile-menu{
+    display: none;
+}
+
+.icon {
+    font-size: 2.5rem;
+}
+
+
+@media screen and (max-width: 940px){
+    .mobile-menu{
+        display: block;
+        flex-direction: column;
+        width: 120px;
+        height: 100%;
+        top: -100vh;
+        left: 0;
+        position: fixed;
+        justify-content: space-between;
+        /* align-items: center; */
+       /*  color: rgba(255, 255, 255, .95); */
+        background-color: #f5f5f5;
+        transition: 0.3s ease;
+        color: #000;
+        
+
+   
+
+        a{
+            text-align: center;
+            font-size: 22px;
+            height: 51px;
+            display: block;
+            line-height: 51px;
+            text-decoration: none;
+            
+        }
+        nav :hover{
+            color: #f5f5;
+
+        }
+    
+       
+    
+    
+     
+        
+}
+
+
+
+
+    .dark {
+        color: #000;
+    }
+
+
+    .active{
+        top: 85px;
+    }
+
+    .mobile-menu li{
+        padding: 1.2rem 1rem;
+        margin: 0 1rem;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+
+    }
+
+    .mobile-nav{
+        margin: 1rem 0;
+    }
+
+    .mobile-menu-button{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        cursor: pointer;
+
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+
+    .social-icons .icons :hover{
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+
+    .mobile-menu button {
+        margin: 1rem;
+        width: 90%;
+    }
+
+
+   .nav-menu{
+    display: none;
+
+   }
+
+   .hamburger{
+    display: block;
+   }
+
+   .nav-icons{
+    display: none;
+   }
+    
+}

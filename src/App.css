@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import "animate.css";
+
+:root {
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Helvetica Neue';
+  font-size: 3.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.container{
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+button {
+     color: #fff600;
+     font-size: 12px;
+     font-weight: 100;
+     letter-spacing: 3px;
+     font-family: sans-serif;
+     text-decoration: none;
+     border: 1px solid #fff600;
+     background-color: #4e4851;
+     padding: 5px 5px;
+     margin: 5px;
+     float: left;
+     animation: fadeIn 1s 1.8s backwards;
+     cursor: pointer;
+ 
+     &:hover{
+         background-color: #fff600;
+         color: #033;
+     }
+}
+
+@media screen and (max-width: 940px){
+  
+  h1{
+    font-size: 2.5;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h2{
+    font-size: 1.5;
   }
-  to {
-    transform: rotate(360deg);
+  *{
+    margin: 0;
+    padding: 0;
+    
   }
+
 }

@@ -1,0 +1,34 @@
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s ;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+
+}
+
+
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .text-animate {
+    opacity: 0;
+  }
+  
+  .text-animate.active {
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .text-animate._15 {
+    animation-delay: 0.5s;
+  }
+  
+  .text-animate._22 {
+    animation-delay: 1s;
+  }
+  
