@@ -24,7 +24,7 @@ const Projects = () =>{
                     </div>                  
                  <p>
                     This project was made for commercial purpose 
-                    i and my friend who is a backend specialist
+                    i and my friend who is a backend
                      came up with the idea you can review by 
                      clicking the link bellow
                 </p>
@@ -53,7 +53,7 @@ const Projects = () =>{
                     <a 
                        target='_blank'
                        rel='noreferrer' 
-                      href='https://spaceair.netlify.app'
+                      href='https://hyfem.github.io/kitchen/index.html'
                     >
                         <button>Review</button>
                     </a>     

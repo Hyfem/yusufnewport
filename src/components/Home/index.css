@@ -1,51 +1,58 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.home-page{
+.home-page {
     width: 100%;
-   .text-zone{
-    position: absolute;
-    width: 300px; 
-    max-height: 100%; 
-    text-align: left; 
-    top: 250px; 
-    left: 40%; 
-    transform: translate(-50%, -50%);   
+    text-align: center;
+    justify-items: center;
+    padding: 20px;
+    top: 90px;
 }
-   
-   h1{
+
+.text-zone {
+    position: absolute;
+    width: 300px;
+    max-height: 100%;
+    text-align: left;
+    top: 250px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+h1 {
     color: #fff;
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
-    &::before{
-        content: '<h1>';
-        font-family: 'La Belle Aurore';
-        color: #fff600;
-        position: absolute;
-        font-size: 18px;
-        margin-top: -40px;
-        left: 15px;
-        opacity: 0.6;
+    position: relative;
+}
 
-    }
-    &::after{
-        content: '<h1>';
-        font-family: 'La Belle Aurore';
-        color: #fff600;
-        position: absolute;
-        font-size: 18px;
-        margin-top: 18px;
-        left: 20px;
-        animation: fadeIn 1s 1.7s backwards;
-        opacity: 0.6;
+h1::before,
+h1::after {
+    content: '<h1>';
+    font-family: 'La Belle Aurore';
+    color: #fff600;
+    position: absolute;
+    opacity: 0.6;
+}
 
-    }
-   }
-   h2{
+h1::before {
+    font-size: 18px;
+    top: -40px;
+    left: 15px;
+}
+
+h1::after {
+    font-size: 18px;
+    top: 18px;
+    left: 20px;
+    animation: fadeIn 1s 1.7s backwards;
+}
+
+h2 {
     color: #bdbdbdbd;
     margin-top: 20px;
     font-weight: 400;
@@ -53,10 +60,9 @@
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
-   }
+}
 
-   .flat-button{
-    margin-top: 20px;
+.flat-button {
     color: #fff600;
     font-size: 13px;
     font-weight: 400;
@@ -70,27 +76,51 @@
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
     cursor: pointer;
-
-    &:hover{
-        background-color: #fff600;
-        color: #033;
-    }
-
-   }
 }
 
-@media screen and(max-width: 940px ){
-    .home-page{
+.flat-button:hover {
+    background-color: #fff600;
+    color: #033;
+}
+
+@media screen and (max-width: 649px) {
+    .home-page {
         width: 100%;
-       .text-zone{
-        position: absolute;
-        width: 300px; 
-        text-align: left; 
-        height: fit-content;
-        top: 90px; 
-        transform: translate(-50%, -50%);   
+        text-align: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    .text-zone {
+        width: 300px;
+        margin-top: 70px;
+
+    
+    }
+
+    h1 {
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    h1::before {
+        font-size: 12px;
+    }
+
+    h1::after {
+        font-size: 13px;
+        animation: fadeIn 1s 1.7s backwards;
+    }
+
+    h2 {
+        font-weight: 100;
+        font-size: 12px;
+    
+    }
+
+    .flat-button {  
+        height: 30px;
+         font-size: 12px;
+        padding-bottom: 50px;
+        letter-spacing: 1.5px;
     }
 }
-}
-
-
