@@ -36,8 +36,7 @@ const Home = () => {
             <h2>
                 FRONTEND WEB DEVELOPER,
                 I am avilable to work remotely and 
-                hybrid , easy to go and love to 
-                work with team 
+                hybrid  and freelance.
             </h2>
             <nav>
              <NavLink exact='true' activeclassname='active' to="/Projects" className='flat-button'>CHECK PROJECTS</NavLink>
