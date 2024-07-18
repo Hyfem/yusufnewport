@@ -8,7 +8,7 @@ function About() {
       <div className='left' >
         <h1>I'am <br/> Ayinde Yusuf Ifemi <br/> (Hyfem)</h1>
         <h2>
-            a deadline oriented frontend web developer, easy going, i can work alone and can also work with team, good in HTML, CSS/TAILWINDS CSS, JAVA SCRIPT and REACT JS, i love to learn new things 
+        I am a frontend web developer who thrives on meeting deadlines. I am adaptable, capable of working independently or collaboratively in teams. My strengths lie in HTML, CSS/Tailwind CSS, JavaScript, and React.js. I have a passion for continuous learning and am always eager to expand my skill set.
            
         </h2>
       </div>
