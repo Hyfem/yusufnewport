@@ -13,6 +13,7 @@
 
 .text-zone {
     position: absolute;
+    padding: 10px;
     width: 300px;
     max-height: 100%;
     text-align: left;
@@ -83,7 +84,7 @@ h2 {
     color: #033;
 }
 
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 940px) {
     .home-page {
         width: 100%;
         text-align: center;
@@ -92,8 +93,8 @@ h2 {
     }
     .text-zone {
         width: 300px;
+        height: fit-content;
         margin-top: 70px;
-
     
     }
 
@@ -118,9 +119,7 @@ h2 {
     }
 
     .flat-button {  
-        height: 30px;
          font-size: 12px;
-        padding-bottom: 50px;
         letter-spacing: 1.5px;
     }
 }
